@@ -1,12 +1,12 @@
-import express from 'express';
+import express from "express";
+import { SignUp, SignIn } from "./handlers";
+import { signUpPayload, signInPayload } from "../../utils/joi";
 
-import { VerifyEmail } from './handlers';
+import { validator } from "../../middlewares";
 
 const router = express.Router();
 
-router.get('/auth/login', VerifyEmail);
-// router.post('/auth/register', VerifyEmail);
-// router.post('/auth/register', VerifyEmail);
-// router.post('/auth/forgotpassword', VerifyEmail);
+router.post("/auth/signup", validator(signUpPayload), SignUp);
+router.post("/auth/signin", validator(signInPayload), SignIn);
 
 export default router;

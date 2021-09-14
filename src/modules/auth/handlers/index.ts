@@ -1,1 +1,2 @@
-export { default as VerifyEmail } from './verifyEmail.handler';
+export { default as SignUp } from "./signUp.handler";
+export { default as SignIn } from "./signIn.handler";
