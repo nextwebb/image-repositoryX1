@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import util from "util";
-import { NotFound, InternalServerError, BadRequest } from "http-errors";
+import { BadRequest } from "http-errors";
 import { nanoid } from "nanoid";
 import * as Aws from "aws-sdk";
 import { AsyncUpload, Permissions } from "../../../types";
