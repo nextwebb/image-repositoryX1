@@ -1,10 +1,8 @@
 // other modules
 import Auth from './auth';
-// import Files from './files';
-// import Disorder from './disorder';
+import Repository from './repository';
 
 export default [
   Auth,
-  //  Files,
-  //  Disorder
+ Repository 
 ];
